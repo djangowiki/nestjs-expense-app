@@ -11,6 +11,7 @@ export class SummaryController {
 constructor(private readonly summaryService:SummaryService) {}
   @Get()
   getSummary() {
+    console.log('Testing')
       return this.summaryService.calculateSummary()
   }
 }
